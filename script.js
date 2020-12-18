@@ -1,5 +1,17 @@
+// update the header with the current date and time
 $("#currentDay").text(moment().format('MMMM Do YYYY, HH:mm'));
-todosInLocalStorage = localStorage.getItem("userameAndHighScore");
+
+// establish global variable to call the current todos
+var currentMessage = ""
+
+// parse out the string of todays into the array of objects 
+// currentMessage = JSON.parse(currentMessage);
+
+// // print the todo items to the screen 
+// for (var i = 0; i < currentMessage.length; i++) {
+
+//     $(".high-score-list-wrapper").append(`<li>Name: ${name} Score: ${score}</li>`)
+// }
 
 
 // based on the currect time, update the color of the rows in the middle column to indicate past, present and future 
@@ -43,7 +55,6 @@ $(".saveBtn").on("click", function (event) {
 
     localStorage.setItem($(this).attr("id"), myStuffInLocalStorage)
 
-    var currentMessage = localStorage.getItem($(this).attr("id"));
-
+    currentMessage = localStorage.getItem($(this).attr("id"));
 
 });
