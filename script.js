@@ -4,7 +4,7 @@ todosInLocalStorage = localStorage.getItem("userameAndHighScore");
 
 // based on the currect time, update the color of the rows in the middle column to indicate past, present and future 
 var currentHour = moment().format('HH')
-currentHour = "10";
+
 console.log(currentHour);
 
 var arrayOfInputs = $(".todo-input")
