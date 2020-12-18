@@ -10,9 +10,8 @@ var currentMessage = ""
 // // print the todo items to the screen 
 // for (var i = 0; i < currentMessage.length; i++) {
 
-//     $(".high-score-list-wrapper").append(`<li>Name: ${name} Score: ${score}</li>`)
+//     arrayOfInputs.append(...)
 // }
-
 
 // based on the currect time, update the color of the rows in the middle column to indicate past, present and future 
 var currentHour = moment().format('HH')
@@ -35,7 +34,6 @@ for (var i = 0; i < arrayOfInputs.length; i++) {
         $("#" + arrayId).addClass("future").removeClass("present past");
     }
 }
-
 
 var arrayOfTodosSubmittedByUser = []
 
